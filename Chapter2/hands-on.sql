@@ -49,9 +49,9 @@ SELECT
   substring(path, 
             position('/metadata/' IN path) + 10)
    AS path,
-  added_snapshot_id,
-  added_data_files_count,
-  added_rows_count
+  added_snapshot_id AS add_snap,
+  added_data_files_count AS add_file_cnt,
+  added_rows_count AS add_row_cnt
 FROM
   "my_iceberg_tbl$manifests";
 
@@ -96,9 +96,9 @@ SELECT
   substring(path, 
             position('/metadata/' IN path) + 10)
    AS path,
-  added_snapshot_id,
-  added_data_files_count,
-  added_rows_count
+  added_snapshot_id AS add_snap,
+  added_data_files_count AS add_file_cnt,
+  added_rows_count AS add_row_cnt
 FROM
   "my_iceberg_tbl$manifests";
 

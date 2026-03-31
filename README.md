@@ -1,7 +1,7 @@
 # optimizing-iceberg-book
 Companion repo to Optimizing Your Apache Iceberg Lakehouse book.
 
-## Helper files by chapter
+## Chapters
 
 - [Chapter 1](./Chapter2/README.md) - Apache Iceberg Introduction
 - [Chapter 2](./Chapter2/README.md) - Exploring Apache Iceberg Architecture
