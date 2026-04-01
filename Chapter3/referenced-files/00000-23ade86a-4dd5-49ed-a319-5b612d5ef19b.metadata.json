@@ -1,0 +1,156 @@
+{
+  "format-version": 2,
+  "table-uuid": "0ca68b28-fcf6-4e6e-9eb4-b16ffe172dd5",
+  "location": "s3://lestermartin.blog/mygalaxy/ch3/nation-9e905bac2cd8416292c8ff74feba1285",
+  "last-sequence-number": 1,
+  "last-updated-ms": 1774995652426,
+  "last-column-id": 4,
+  "current-schema-id": 0,
+  "schemas": [
+    {
+      "type": "struct",
+      "schema-id": 0,
+      "fields": [
+        {
+          "id": 1,
+          "name": "nationkey",
+          "required": false,
+          "type": "long"
+        },
+        {
+          "id": 2,
+          "name": "name",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "id": 3,
+          "name": "regionkey",
+          "required": false,
+          "type": "long"
+        },
+        {
+          "id": 4,
+          "name": "comment",
+          "required": false,
+          "type": "string"
+        }
+      ]
+    }
+  ],
+  "default-spec-id": 0,
+  "partition-specs": [
+    {
+      "spec-id": 0,
+      "fields": []
+    }
+  ],
+  "last-partition-id": 999,
+  "default-sort-order-id": 0,
+  "sort-orders": [
+    {
+      "order-id": 0,
+      "fields": []
+    }
+  ],
+  "properties": {
+    "write.format.default": "PARQUET",
+    "write.parquet.compression-codec": "zstd"
+  },
+  "current-snapshot-id": 7105994075912274000,
+  "refs": {
+    "main": {
+      "snapshot-id": 7105994075912274000,
+      "type": "branch"
+    }
+  },
+  "snapshots": [
+    {
+      "sequence-number": 1,
+      "snapshot-id": 7105994075912274000,
+      "timestamp-ms": 1774995652270,
+      "summary": {
+        "operation": "append",
+        "trino_query_id": "20260331_222045_47529_25bbq",
+        "trino_user": "lester.martin@starburstdata.com",
+        "added-data-files": "1",
+        "added-records": "25",
+        "added-files-size": "1913",
+        "changed-partition-count": "1",
+        "total-records": "25",
+        "total-files-size": "1913",
+        "total-data-files": "1",
+        "total-delete-files": "0",
+        "total-position-deletes": "0",
+        "total-equality-deletes": "0",
+        "engine-version": "479-galaxy-20260327-u1-g0fcfb849a23",
+        "engine-name": "trino",
+        "iceberg-version": "Apache Iceberg 1.10.1-e.1 (commit 57448704eb9967abee52da13672326592e9ebe25)"
+      },
+      "manifest-list": "s3://lestermartin.blog/mygalaxy/ch3/nation-9e905bac2cd8416292c8ff74feba1285/metadata/snap-7105994075912273935-1-b1df92e8-e58c-49d7-b50e-b98d98a8ed78.avro",
+      "schema-id": 0
+    }
+  ],
+  "statistics": [
+    {
+      "snapshot-id": 7105994075912274000,
+      "statistics-path": "s3://lestermartin.blog/mygalaxy/ch3/nation-9e905bac2cd8416292c8ff74feba1285/metadata/20260331_222045_47529_25bbq-7b4c55ec-7ea1-4db8-a7f8-8f1132aa8277.stats",
+      "file-size-in-bytes": 1607,
+      "file-footer-size-in-bytes": 847,
+      "blob-metadata": [
+        {
+          "type": "apache-datasketches-theta-v1",
+          "snapshot-id": 7105994075912274000,
+          "sequence-number": 1,
+          "fields": [
+            1
+          ],
+          "properties": {
+            "ndv": "25"
+          }
+        },
+        {
+          "type": "apache-datasketches-theta-v1",
+          "snapshot-id": 7105994075912274000,
+          "sequence-number": 1,
+          "fields": [
+            2
+          ],
+          "properties": {
+            "ndv": "25"
+          }
+        },
+        {
+          "type": "apache-datasketches-theta-v1",
+          "snapshot-id": 7105994075912274000,
+          "sequence-number": 1,
+          "fields": [
+            3
+          ],
+          "properties": {
+            "ndv": "5"
+          }
+        },
+        {
+          "type": "apache-datasketches-theta-v1",
+          "snapshot-id": 7105994075912274000,
+          "sequence-number": 1,
+          "fields": [
+            4
+          ],
+          "properties": {
+            "ndv": "25"
+          }
+        }
+      ]
+    }
+  ],
+  "partition-statistics": [],
+  "snapshot-log": [
+    {
+      "timestamp-ms": 1774995652270,
+      "snapshot-id": 7105994075912274000
+    }
+  ],
+  "metadata-log": []
+}

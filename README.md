@@ -1,5 +1,5 @@
 # optimizing-iceberg-book
-Companion repo to *Optimizing Your Apache Iceberg Lakehouse* book which is STILL UNDER DEVELOPMENT.
+Companion repo to **Optimizing Your Apache Iceberg Lakehouse** book which is *STILL UNDER DEVELOPMENT* with a target release date for early November 2026.
 
 ![Book Cover](./book-cover.png "Book Cover")
 
