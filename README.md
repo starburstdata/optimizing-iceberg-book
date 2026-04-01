@@ -1,5 +1,7 @@
 # optimizing-iceberg-book
-Companion repo to Optimizing Your Apache Iceberg Lakehouse book.
+Companion repo to *Optimizing Your Apache Iceberg Lakehouse* book which is STILL UNDER DEVELOPMENT.
+
+![Book Cover](./book-cover.png "Book Cover")
 
 ## Chapters
 
