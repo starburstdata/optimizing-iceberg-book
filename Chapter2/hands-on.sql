@@ -57,16 +57,15 @@ FROM
 
 -- view the ref'd file and its statistics
 SELECT
- substring(file_path, 
-           position('/data/' IN file_path) + 6)
-   AS file_path,
- record_count,
- value_counts,
- null_value_counts,
- lower_bounds,
- upper_bounds
+  substring(file_path, 
+            position('/data/' IN file_path) + 6)
+    AS file_path,
+  record_count as recs, 
+  value_counts AS value_cnts, 
+  null_value_cnts AS null_value_cnts, 
+  lower_bounds, upper_bounds
 FROM
- "my_iceberg_tbl$files";
+  "my_iceberg_tbl$files";
 
 -- add 5 more records
 INSERT INTO my_iceberg_tbl
@@ -114,26 +113,3 @@ SELECT
  upper_bounds
 FROM
  "my_iceberg_tbl$files";
-
--- run this insert statement 10 times
-INSERT INTO my_iceberg_tbl
-  SELECT * FROM my_iceberg_tbl;
-
--- make sure you have at least 12 files present
-SELECT
-  file_path,
-  record_count,
-  file_size_in_bytes
-FROM
-  "my_iceberg_tbl$files";
-
--- kick off the compaction task
-ALTER TABLE my_iceberg_tbl EXECUTE optimize;
-
--- verify there are fewer, larger files (likely will be 4)
-SELECT
-  file_path,
-  record_count,
-  file_size_in_bytes
-FROM
-  "my_iceberg_tbl$files";
