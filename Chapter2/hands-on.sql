@@ -9,8 +9,8 @@ USE optimize_ice.ch2;
 -- create an empty Iceberg table
 CREATE TABLE my_iceberg_tbl (
    id integer,
-   name varchar(55),
-   description varchar(255)
+   name varchar,
+   description varchar
 ) WITH (TYPE = 'iceberg', FORMAT = 'parquet');
 
 -- verify there is a single snapshot w/o any parent
